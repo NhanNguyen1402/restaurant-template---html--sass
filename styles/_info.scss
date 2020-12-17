@@ -1,0 +1,21 @@
+.info {
+    text-align: center;
+    padding-top: 5rem;
+    margin-top: 2rem;
+    background: $gray-color;
+    color: $white-color;
+    h1{
+        margin-bottom: 3rem;
+    }
+    .info-content{
+        @include bdGrid();
+        @include maxWidth();
+        text-align: left;
+        justify-content: center;
+        padding: 3rem;
+    }
+    button{
+        @include Btn($white-color, $gray-color , $white-color, $gray-color-light );
+        margin-bottom: 3rem;
+    }
+}

@@ -1,0 +1,57 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: $main-font;
+    margin: 0 auto;
+}
+h1{
+    font-family: 'Reyy';
+    font-size: 5rem;
+}
+p{
+    font-size: 1.2rem;
+}
+a{
+    text-decoration: none;
+    color: $white-color;
+    text-transform: uppercase;
+    text-overflow: none;
+    &:hover{
+        color: $yellow-color;
+    }
+}
+li{
+    list-style: none;
+}
+
+// ------layout------
+@mixin bdGrid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-column-gap: 2rem;
+}
+@mixin maxWidth {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+@mixin Btn ($backGround, $color, $hoverColor, $hoverBg) {
+    width: 200px;
+    height: 50px;
+    border-radius: 50px;
+    text-transform: uppercase;
+    font-weight: bold;
+    background: $backGround;
+    color: $color;
+    cursor: pointer;
+    border: none;
+    &:hover {
+        color: $hoverColor;
+        background: $hoverBg;
+    }
+    &:focus {
+        outline: none;
+    }
+}

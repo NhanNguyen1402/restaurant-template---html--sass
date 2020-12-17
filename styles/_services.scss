@@ -1,0 +1,26 @@
+.services{
+    padding-top: 3rem;
+    .services-content{
+        @include maxWidth();
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-column-gap: 2rem;
+        margin-bottom: 5rem;
+        h2 {
+            margin-bottom: 2rem;
+            text-align: center;
+            font-family: 'Reyy';
+        }
+    }
+    .services-title{
+        @include maxWidth();
+        text-align: center;
+        width: 70%;
+        h1 {
+            margin: 3rem auto;
+        }
+        p {
+            font-weight: bold;
+        }
+    }
+}

@@ -1,0 +1,23 @@
+.discount{
+    margin: 3rem auto;
+    .item{
+        @include bdGrid();
+        @include maxWidth();
+        background: $white-color;
+        margin: 3rem auto;
+        h2 {
+            margin-bottom: 2rem;
+            font-size: 3rem;
+            width: 70%;
+        }
+        img{
+            width: 500px;
+            height: 500px;
+            margin: 0 auto;
+        }
+        button{
+            @include Btn($gray-color, $white-color, $white-color, $yellow-color);
+            margin-top: 2rem;
+        }        
+    }
+}
